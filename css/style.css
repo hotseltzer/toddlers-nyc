@@ -1,0 +1,37 @@
+html {
+    background-color: #D7CEB2;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.background-bg {
+  background: url("../images/new-york.jpg"); 
+  background-position: 0% 60%;
+  background-size: cover;
+  color: white;
+}
+
+
+.navbar-default {
+    background-color: #C5C5C5;
+    border-bottom: #111;
+}
+
+
+.navbar-brand {
+    color: #546A7B !important;
+    margin-left: 30px !important;
+    
+}
+
+.navbar-nav li a {
+    color: #546A7B !important;
+}
+
+.navbar-nav li a:hover {
+    color: #fff !important;
+    background-color: #a3c2c2 !important;
+}
