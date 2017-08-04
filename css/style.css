@@ -74,6 +74,15 @@ body{
     padding-right: 50px;
 }
 
+.row1 {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.img-responsive {
+    border: 2px solid black;
+}
+
 .other {
   background: #999;
   border-radius: 25px;
@@ -128,7 +137,13 @@ body{
     padding-bottom: 50px;
 }
 
+.modal-body {
+    background: lightblue;
+}
 
+.modal-footer p {
+    text-align: center;
+}
 
 a {
   text-decoration: none;
