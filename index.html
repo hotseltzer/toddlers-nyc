@@ -74,14 +74,42 @@
   </div>
 </div>
 
+
+<div class="container-gif">
+       <h1>What's your current mood?</h1>
+       <button type="button" class="btn btn-primary btn-lg" onclick="myFunction()">Click me</button>
+<div id='gif-container'>
+    
+
+</div>
+</div>
+ 
+
 <div class="empty-space">
 </div>
-        
 
-      
+        
     <!-- Always load scripts at the bottom of the body   -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    
+<script>
+    function myFunction() {
+      var search = 'kids';
+      $.get( "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=dc6zaTOxFJmzC&limit=1", function( data ) {
+        console.log(data);
+        for(var x = 0; x < data.data.length; x++){
+          var img = $('<img>');
+          img.attr('src', data.data[x].images.original.url);
+          $('#gif-container').append(img);
+        }
+      });
+    }
+     
+
+   </script>    
+    
+    
 </body>
 
 </html>
